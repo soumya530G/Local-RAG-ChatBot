@@ -1,0 +1,22 @@
+[project]
+name = "local-ai-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "soumya0530", email = "soumyamns002@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "langchain>=1.4.4",
+    "langchain-chroma>=1.1.0",
+    "langchain-ollama>=1.1.0",
+    "pandas>=3.0.6",
+]
+
+[project.scripts]
+local-ai-agent = "local_ai_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
